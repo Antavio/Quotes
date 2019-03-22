@@ -16,6 +16,12 @@ export class QuoteComponent implements OnInit {
   toogleDetails(index){
     this.quotes[index].showDesc = !this.quotes[index].showDesc;
   }
+
+  deleteQuote(quoteDelete,index){
+    if(quoteDelete){
+      this.quotes.splice(index,1);
+    }
+  }
   constructor() {
   }
 

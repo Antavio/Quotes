@@ -4,7 +4,7 @@
   <li >{{quote.quote}}</li>
   <button (click)='toogleDetails(position)'>Quote Details</button>
 
-  <!-- Input Binging -->
-  <app-quote-datails *ngIf="quote.showDesc" [quote]='quote'></app-quote-datails>
+  <!-- Input Binding -->
+  <app-quote-datails *ngIf="quote.showDesc" [quote]='quote' (quoteDelete)='deleteQuote($event,position)'></app-quote-datails>
 </div>
 </ol>
