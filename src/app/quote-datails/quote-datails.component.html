@@ -1,4 +1,4 @@
-<p> Author of the Quote is
-  {{quote.author}} while the publisher is {{quote.publisher}} Days passed {{quote.actualDate|date}}
-</p>
+<p> Author:
+  <strong>{{quote.author}}</strong> <br>
+Publisher:<strong>{{quote.publisher}}</strong><br>Days passed since Quote was published <strong>{{quote.actualDate|dateRange}} days</strong></p>
 <button (click)='deleteQuote(true)'>Delete Quote</button>
