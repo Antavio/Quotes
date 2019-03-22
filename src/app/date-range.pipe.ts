@@ -9,7 +9,7 @@ export class DateRangePipe implements PipeTransform {
     let today:Date = new Date();
     let todayWithoutTime:any = new Date(today.getFullYear(),today.getMonth(),today.getDate())
 
-    var dateDiff = Math.abs(value - todayWithoutTime)
+    var dateDiff = Math.abs(todayWithoutTime - value)
 
     const secInADay=86400;
 
@@ -17,7 +17,7 @@ export class DateRangePipe implements PipeTransform {
 
     var dayCounter = dateDiffSeconds/secInADay;
     
-    if (dayCounter >=1 && value > todayWithoutTime){
+    if (dayCounter >=1 && value < todayWithoutTime){
       return dayCounter;
     } else {
       return 0;
