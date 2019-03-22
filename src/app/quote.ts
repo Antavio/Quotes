@@ -1,3 +1,7 @@
 export class Quote {
-    constructor(public id:number, public quote:string,public author:string, public publisher:string){}
+    public showDesc:boolean;
+    constructor(public id:number, public quote:string,public author:string, public publisher:string){
+        this.showDesc=false
+    }
+    
 }

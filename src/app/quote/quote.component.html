@@ -1,4 +1,10 @@
 <h3>Here is a list of Quotes</h3>
 <ol type="i">
-  <li *ngFor='let quote of quotes'>{{quote.quote}}</li>
+  <div *ngFor='let quote of quotes;let position = index'>
+  <li >{{quote.quote}}</li>
+  <button (click)='toogleDetails(position)'>Quote Details</button>
+
+  <!-- Input Binging -->
+  <app-quote-datails *ngIf="quote.showDesc" [quote]='quote'></app-quote-datails>
+</div>
 </ol>
