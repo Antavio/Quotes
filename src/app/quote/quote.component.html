@@ -2,7 +2,7 @@
 <ol type="i">
   <div *ngFor='let quote of quotes;let position = index'>
   <li >{{quote.quote}}</li>
-  <button (click)='toogleDetails(position)'>Quote Details</button>
+  <button class="btn btn-outline-primary" (click)='toogleDetails(position)'>Quote Details</button>
 
   <!-- Input Binding -->
   <app-quote-datails *ngIf="quote.showDesc" [quote]='quote' (quoteDelete)='deleteQuote($event,position)'></app-quote-datails>
