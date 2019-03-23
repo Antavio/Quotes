@@ -13,6 +13,13 @@ export class QuoteComponent implements OnInit {
     new Quote(3,"Quote Mingi","Mhandisi","Chief Publisher",new Date(2019,4,10)),
   ]
 
+  quoteSubmission(quote){
+    let quoteLength=this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.actualDate = new Date(quote.actualDate);
+    this.quotes.push(quote);
+  }
+
   toogleDetails(index){
     this.quotes[index].showDesc = !this.quotes[index].showDesc;
   }
