@@ -1,27 +1,54 @@
 # Quotes
+This is an Angular application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+## Author
+[Anthony Njuguna Kiarie](https://github.com/Antavio)
 
-## Development server
+## Project Description
+This is an Angular application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. Once the user creates a new Quote they can be able to see extra details of the quote which include name of the author & publisher and the days passed from the time it was created. The user can also upvote or downvote a quote based their attitude about the quote. Finally the quote with most upvotes is highlighted.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Project Setup instructions
+Use the following commands to use this project.
+- git clone https://github.com/Antavio/Quotes.git
+- cd Quotes
+- atom .  //For those using atom text editor.
+- code .  //For those using Visual Studio editor.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Technologies used
+The different technologies that were used to develop this program include:
+1. Angular.
+2. Bootstrap.
+3. Javascript.
+4. Typescript.
+5. CSS
 
-## Build
+### Project's BDD
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Link to live site
+Here is a link to the live site https://antavio.github.io/Quotes/
 
-## Running unit tests
+### Contact Me
+If you have any suggestions, additions or modifications on this project you can reach me via my email: njuguna13@gmail.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### License  & Copyright information
+Copyright (c) 2019 Anthony Njuguna
 
-## Running end-to-end tests
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Further help
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
