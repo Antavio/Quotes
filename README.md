@@ -1,5 +1,4 @@
 # Quotes
-This is an Angular application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
 
 ## Author
 [Anthony Njuguna Kiarie](https://github.com/Antavio)
@@ -24,6 +23,7 @@ The different technologies that were used to develop this program include:
 5. CSS
 
 ### Project's BDD
+
 
 ### Link to live site
 Here is a link to the live site https://antavio.github.io/Quotes/
