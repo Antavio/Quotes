@@ -1,4 +1,10 @@
-<h3>Here is a list of Quotes</h3>
+<div class="container-fluid">
+    <h3>Here is a list of Quotes</h3>
+  <div class="row">
+   <div class="col-md-4">
+     <app-quote-form></app-quote-form>
+   </div> 
+   <div class="col-md-7">
 <ol type="i">
   <div *ngFor='let quote of quotes;let position = index'>
   <li >{{quote.quote}}</li>
@@ -8,3 +14,6 @@
   <app-quote-datails *ngIf="quote.showDesc" [quote]='quote' (quoteDelete)='deleteQuote($event,position)'></app-quote-datails>
 </div>
 </ol>
+</div>
+</div>
+</div>
