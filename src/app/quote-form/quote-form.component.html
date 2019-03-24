@@ -1,10 +1,10 @@
 <div class="container-fluid">
   
-      <form (ngSubmit)='quoteSubmission()' #quoteForm='ngForm'>
+      <form  #quoteForm='ngForm' (ngSubmit)='quoteSubmission()'>
             <div class="form-group">
                     <label for="quote">Quote</label>
                     <textarea class="form-control" id="quote" rows="5" cols="10" [(ngModel)]="newQuote.quote" name="quote" #quoteref="ngModel" required></textarea>                   
-                    <div [hidden]="quoteref.pristine || quoteref.valid" class="alert alert-info">
+                    <div [hidden]="quoteref.valid || quoteref.pristine" class="alert alert-info">
                         <h6>Enter a Quote before submitting</h6>
                     </div>
                 </div>

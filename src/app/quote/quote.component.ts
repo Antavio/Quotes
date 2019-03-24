@@ -14,8 +14,7 @@ export class QuoteComponent implements OnInit {
   ]
 
   quoteSubmission(quote){
-    let quoteLength=this.quotes.length;
-    quote.id = quoteLength+1;
+    quote.id +=1;
     quote.actualDate = new Date(quote.actualDate);
     this.quotes.push(quote);
   }
