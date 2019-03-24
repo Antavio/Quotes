@@ -1,27 +1,37 @@
 <div class="container-fluid">
-  <div class="row">
-      <form #quoteForm='ngForm' (ngSubmit)='quoteSubmission()'>
+  
+      <form (ngSubmit)='quoteSubmission()' #quoteForm='ngForm'>
             <div class="form-group">
                     <label for="quote">Quote</label>
-                    <textarea class="form-control" id="description" rows="5" cols="10" [(ngModel)]="newQuote.quote" name="quote"></textarea>                   
+                    <textarea class="form-control" id="quote" rows="5" cols="10" [(ngModel)]="newQuote.quote" name="quote" #quoteref="ngModel" required></textarea>                   
+                    <div [hidden]="quoteref.pristine || quoteref.valid" class="alert alert-info">
+                        <h6>Enter a Quote before submitting</h6>
+                    </div>
                 </div>
         <div class="form-group">
 
             <label for="author">Author</label>
-            <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author">
-            
+            <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
+            <div [hidden]="author.pristine || author.valid" class="alert alert-info">
+                <h6>Enter Author Name before submitting</h6>
+            </div>
         </div>
         <div class="form-group">
 
-            <label for="publisher">Publisher</label>
-            <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher">
-            
+            <label for="publisher">Posted By</label>
+            <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel">
+            <div [hidden]="publisher.pristine || publisher.valid" class="alert alert-info">
+                <h6>Enter Name of the person posting the Quote</h6>
+            </div>     
         </div>
         <div class="form-group">
             <label for="date"> Date Posted</label><br>
-            <input type='date' id="date" required [(ngModel)]="newQuote.actualDate" name="actualDate">
+            <input type='date' id="date"  [(ngModel)]="newQuote.actualDate" name="actualDate" #actualDate="ngModel" required>
+            <div [hidden]="actualDate.pristine || actualDate.valid" class="alert alert-info">
+                <h6>Enter Today's Full date</h6>
+            </div>
         </div>
-        <button type="Submit" class="btn btn-outline-success btn-lg">Add Quote</button>
+        <button type="Submit" class="btn btn-outline-success btn-lg">Add a Quote</button>
       </form>
-  </div>
+  
 </div>
