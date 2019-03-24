@@ -11,6 +11,7 @@ export class QuoteDatailsComponent implements OnInit {
   @Input() quote:Quote;
 
   @Output() vote = new EventEmitter<boolean>();
+  @Output() downvote = new EventEmitter<boolean>();
   @Output() quoteDelete = new EventEmitter<boolean>();
 
   
@@ -20,6 +21,9 @@ export class QuoteDatailsComponent implements OnInit {
 
   upVote(countVote:boolean){
     this.vote.emit(countVote);
+  }
+  downVote(countDownVote:boolean){
+    this.downvote.emit(countDownVote);
   }
   constructor() { }
 
