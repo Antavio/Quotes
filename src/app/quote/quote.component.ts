@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1,"Drive your destiny","Mandela","Anthony",new Date(2019,0,22)), 
-    new Quote(2,"Quote of quotes","Author","Publisher",new Date(2019,1,22)),
-    new Quote(3,"Quote Mingi","Mhandisi","Chief Publisher",new Date(2019,4,10)),
+    new Quote(1,"Drive your destiny","Mandela","Anthony",0,new Date(2019,0,22)), 
+    new Quote(2,"Quote of quotes","Author","Publisher",0,new Date(2019,1,22)),
+    new Quote(3,"Quote Mingi","Mhandisi","Chief Publisher",0,new Date(2019,4,10)),
   ]
 
   quoteSubmission(quote){
@@ -31,6 +31,11 @@ export class QuoteComponent implements OnInit {
         this.quotes.splice(index,1);
       }
       
+    }
+  }
+  upVote(upVoting,index){
+    if(upVoting){
+      this.quotes[index].upvotes +=1;
     }
   }
   constructor() {

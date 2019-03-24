@@ -9,12 +9,17 @@ import {Quote} from '../quote';
 export class QuoteDatailsComponent implements OnInit {
 
   @Input() quote:Quote;
-  
+
+  @Output() vote = new EventEmitter<boolean>();
   @Output() quoteDelete = new EventEmitter<boolean>();
 
   
   deleteQuote(complete:boolean){
     this.quoteDelete.emit(complete);
+  }
+
+  upVote(countVote:boolean){
+    this.vote.emit(countVote);
   }
   constructor() { }
 

@@ -28,7 +28,7 @@
             <label for="date"> Date Posted</label><br>
             <input type='date' id="date"  [(ngModel)]="newQuote.actualDate" name="actualDate" #actualDate="ngModel" required>
             <div [hidden]="actualDate.pristine || actualDate.valid" class="alert alert-info">
-                <h6>Enter Today's Full date</h6>
+                <h6>Enter the Full date</h6>
             </div>
         </div>
         <button type="Submit" class="btn btn-outline-success btn-lg">Add a Quote</button>
