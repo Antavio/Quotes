@@ -23,7 +23,12 @@ The different technologies that were used to develop this program include:
 5. CSS
 
 ### Project's BDD
-
+| Behaviour | Expected Output |
+|-----------|-----------------|
+|  A user inputs the quote, author's name, date of posting & finally they press add quote button       |   The quote is added to the view page              |
+|  Wheb the user then clicks the Quote details button         | More details which include Author's name, name of the person who posted the quote, days passed since the quote was created, Number of upvotes & downvotes are displayed.Also a delete,upvote & downvote buttons are displayed                 |
+| The initial upvote & downvote is zero. The user can click either of the button           | If upvote button is clicked, it adds the upvote value & when downvote is clicked it reduces the votes by a single init                |
+|  One of the quotes is highlighted under certain conditions         |  The Application calculates the quote with the most number of votes is highlighted.               |
 
 ### Link to live site
 Here is a link to the live site https://antavio.github.io/Quotes/
