@@ -17,10 +17,10 @@ export class DateRangePipe implements PipeTransform {
 
     var dayCounter = dateDiffSeconds/secInADay;
     
-    if (dayCounter >=1 && value < todayWithoutTime){
-      return dayCounter;
-    } else {
+    if (dayCounter >=1 && value > todayWithoutTime){
       return 0;
+    } else {
+      return Math.round(dayCounter);
     }
     }
     
