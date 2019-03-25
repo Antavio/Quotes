@@ -1,4 +1,5 @@
 # Quotes
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Author
 [Anthony Njuguna Kiarie](https://github.com/Antavio)
@@ -13,6 +14,21 @@ Use the following commands to use this project.
 - atom .  //For those using atom text editor.
 - code .  //For those using Visual Studio editor.
 
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### Technologies used
 The different technologies that were used to develop this program include:
@@ -33,8 +49,14 @@ The different technologies that were used to develop this program include:
 ### Link to live site
 Here is a link to the live site https://antavio.github.io/Quotes/
 
+
+
 ### Contact Me
 If you have any suggestions, additions or modifications on this project you can reach me via my email: njuguna13@gmail.com
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ### License  & Copyright information
 Copyright (c) 2019 Anthony Njuguna
